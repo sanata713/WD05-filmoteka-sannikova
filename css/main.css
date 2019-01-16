@@ -474,6 +474,24 @@ a.badge:active {
 .card-wrapper-fixed-size {
   width: 360px;
 }
+.card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+.card__header>* {
+    margin-top: 0 !important;
+}
+a.button--delete,
+a.button--delete:hover,
+a.button--delete:focus,
+.user-content a.button--delete,
+.user-content a.button--delete:hover,
+.user-content a.button--delete:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
 .comment-register {
   background-color: #f6f7f8;
   padding: 50px 0;
@@ -1144,6 +1162,11 @@ fieldset {
 .notify--success {
   background-image: -webkit-linear-gradient(90deg, #08711c 0%, #2cb951 100%);
   background-image: -ms-linear-gradient(90deg, #08711c 0%, #2cb951 100%);
+  color: #fff;
+}
+.notify--info {
+  background-image: -webkit-linear-gradient(90deg, #E57101 0%, #e3ab00 100%);
+  background-image: -ms-linear-gradient(90deg, #E57101 0%, #e3ab00 100%);
   color: #fff;
 }
 .notify--update {
