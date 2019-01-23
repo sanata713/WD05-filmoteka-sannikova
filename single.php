@@ -17,11 +17,16 @@ if(@$_GET ['action'] == 'delete') {
     }
 }
 
-$films = films_all($link);
+$film = get_film($link, $_GET['id']);
+
+// echo "<pre>";
+// print_r($film);
+// echo "</pre>";
+
 
 include('views/head.tpl');
 include('views/notification.tpl');
-include('views/index.tpl');
+include('views/film_single.tpl');
 include('views/footer.tpl');
 
 ?>
